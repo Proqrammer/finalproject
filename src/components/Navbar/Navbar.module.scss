@@ -1,0 +1,25 @@
+.navbar {
+    background: #222;
+    padding: 10px 0;
+  
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  
+      li {
+        margin: 0 15px;
+  
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+  
+          &:hover {
+            color: #f0a500;
+          }
+        }
+      }
+    }
+  }
+  
