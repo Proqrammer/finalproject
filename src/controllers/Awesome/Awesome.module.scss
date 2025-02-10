@@ -1,0 +1,63 @@
+.container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+    .title {
+        font-family: monospace;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #002b5b;
+    }
+  
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  
+      .step {
+        flex: 1 1 calc(33.333% - 40px);
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+  
+        .logo {
+          width: 80px; // Logoların boyutunu ayarlayın
+          height: 80px;
+          margin-bottom: 10px;
+        }
+  
+        p {
+            font-family: 'Courier New', Courier, monospace;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  
+    .linkExample {
+      margin-top: 30px;
+      font-size: 1.2rem;
+  
+      a {
+        color: #007bff;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .steps {
+      flex-direction: column;
+  
+      .step {
+        flex: 1 1 100%;
+      }
+    }
+  }

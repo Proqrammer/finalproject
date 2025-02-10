@@ -1,0 +1,50 @@
+.bitcoinSec {
+    text-align: center;
+    padding: 5rem 10%;
+    background-color: #f8f5f1;
+  
+    h2 {
+      font-size: 2.5rem;
+      color: #002b5b;
+      margin-bottom: 2rem;
+      font-family: monospace;
+    }
+  
+    .swiper {
+      padding: 2rem 0;
+    }
+  
+    .card {
+      background: white;
+      border: 2px solid #002b5b;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      min-height: 200px;
+  
+      .stars {
+        color: #ff9800;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+  
+      span {
+        font-weight: bold;
+        color: #002b5b;
+      }
+    }
+  }
+  
+  // Responsive
+  @media (max-width: 768px) {
+    .bitcoinSec {
+      padding: 3rem 5%;
+    }
+  }
+  

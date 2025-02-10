@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002f6c;
+    padding: 10px 20px;
+    color: white;
+  
+    .logo {
+      display: flex;
+      align-items: center;
+  
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+  
+      span {
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 4px;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  
+    .navLinks {
+      display: flex;
+      list-style: none;
+  
+      li {
+        margin: 0 15px;
+  
+        a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #00b0ff;
+          }
+        }
+      }
+    }
+  
+    .navActions {
+      display: flex;
+      align-items: center;
+  
+      .login {
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+      }
+  
+      .signup {
+        border: 2px solid white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: background 0.3s;
+  
+        &:hover {
+          background: white;
+          color: #002f6c;
+        }
+      }
+  
+      .iconButton {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        color: white;
+        margin-left: 10px;
+        cursor: pointer;
+  
+        &:hover {
+          color: #00b0ff;
+        }
+      }
+    }
+  
+    /* RESPONSIVE TASARIM */
+    @media (max-width: 1024px) {
+      .navLinks {
+        gap: 10px;
+  
+        li {
+          margin: 0 10px;
+        }
+      }
+  
+      .signup {
+        padding: 4px 8px;
+      }
+  
+      .iconButton {
+        font-size: 1rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 15px;
+  
+      .navLinks {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
+  
+      .navActions {
+        margin-top: 10px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .logo span {
+        font-size: 1.2rem;
+      }
+  
+      .signup {
+        font-size: 0.9rem;
+      }
+  
+      .iconButton {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
